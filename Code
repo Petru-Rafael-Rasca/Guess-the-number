@@ -1,1 +1,15 @@
+from art import logo
+import random
 
+print(logo)
+
+guess_taken = 0
+
+print("Welcome to the Number Guessing Game !")
+print("I am thinking of a number between 1 and 100.")
+level = input("Choose a difficulty. Type 'easy' or 'hard': ")
+
+if level == 'easy':
+    guess_taken = 10
+    print(f"You have {guess_taken} attempts remaining to guess the number.")
+    guess = input("Make a guess: ")
